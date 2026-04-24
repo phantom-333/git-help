@@ -112,12 +112,15 @@ git remote add origin ""
 ~~~bash
 git remote -v
 ~~~
-8. отправить изменения на удаленный репозиторий, в последующие разы достаточно использшовать только "git push". Вместо master может быть main.
+8. отправить изменения на удаленный репозиторий, в первый раз с флагом -u origin master, вместо master может быть main. В последующие разы достаточно использшовать только "git push"
 ~~~bash
 git push -u origin master
 ~~~
 ~~~bash
 git push -u origin main
+~~~
+~~~bash
+git push
 ~~~
 9. клонировать репозиторий с GitHub в локальный Git
 ~~~bash
