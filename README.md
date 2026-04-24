@@ -122,7 +122,7 @@ git push -u origin main
 ~~~bash
 git push
 ~~~
-9. клонировать репозиторий с GitHub в локальный Git
+9. клонировать репозиторий с GitHub в локальный Git (git clone <ссылка на репозиторий> <название папки>)
 ~~~bash
 git clone
 ~~~
