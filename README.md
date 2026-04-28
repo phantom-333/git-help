@@ -137,3 +137,7 @@ git push
 ~~~bash
 git clone
 ~~~
+10. изменить URL удаленного репозитория
+~~~bash
+git remote set-url origin 
+~~~
