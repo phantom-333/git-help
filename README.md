@@ -81,7 +81,7 @@ git status
 %% Статусы файлов:
 graph LR;
   untracked -- "git add"       --> staged;
-  staged    -- "git commit"    --> tracked/comitted;
+  staged    -- "git commit"    --> tracked;
   staged    -- "изменения"     --> modified;
   tracked   -- "изменения"     --> modified;
   modified  -- "git add"       --> staged;
