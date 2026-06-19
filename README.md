@@ -84,10 +84,10 @@ graph LR;
   staged    -- "git restore --staged"  --> untracked;
   staged    -- "git commit"    --> tracked;
   staged    -- "изменения"     --> modified;
+  modified  -- "git restore --staged"   --> staged;
   tracked   -- "изменения"     --> modified;
   modified  -- "git restore"   --> tracked;
   modified  -- "git add"       --> staged;
-  modified  -- "git restore --staged"   --> staged;
 ```
 6. подготовить к сохранению все файлы в каталоге
 ~~~bash
