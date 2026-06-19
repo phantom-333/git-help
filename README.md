@@ -83,10 +83,10 @@ graph LR;
   untracked -- "git add"       --> staged;
   staged    -- "git restore --staged"  --> untracked;
   staged    -- "git commit"    --> tracked;
+  modified  -- "git restore --staged"   --> staged;
   staged    -- "изменения"     --> modified;
   tracked   -- "изменения"     --> modified;
   modified  -- "git restore"   --> tracked;
-  modified  -- "git restore --staged"   --> staged;
   modified  -- "git add"       --> staged;
 ```
 6. подготовить к сохранению все файлы в каталоге
