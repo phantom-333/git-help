@@ -81,7 +81,7 @@ git status
 %% Статусы файлов:
 graph LR;
   untracked -- "git add"       --> staged;
-  staged    -- "git commit"    --> tracked/comitted;
+  staged    -- "git commit"    --> tracked;
   staged    -- "изменения"     --> modified;
   tracked   -- "изменения"     --> modified;
   modified  -- "git add"       --> staged;
@@ -98,11 +98,15 @@ git add
 ~~~bash
 git commit -m ""
 ~~~
-9. посмотреть историю коммитов
+9. внести правки в уже сделанный коммит (параметр no-edit означает, что сообщение остается прежним, если его нужно изменить, то используется флаг -m)
+~~~bash
+git commit --amend --no-edit
+~~~
+10. посмотреть историю коммитов
 ~~~bash
 git log
 ~~~
-10. посмотреть историю коммитов в сокращенном виде
+11. посмотреть историю коммитов в сокращенном виде
 ~~~bash
 git log --oneline
 ~~~
