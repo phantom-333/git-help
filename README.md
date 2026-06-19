@@ -99,6 +99,10 @@ git add
 ~~~bash
 git restore --staged
 ~~~
+Сброс отслеживания всей текущей папки:
+~~~bash
+git restore --staged .
+~~~
 9. выполнить коммит, для которого установить краткую заметку - описание изменений (git commit -m "заметка")
 ~~~bash
 git commit -m ""
