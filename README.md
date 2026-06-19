@@ -77,6 +77,15 @@ rm -rf .git
 ~~~bash
 git status
 ~~~
+```mermaid
+%% Статусы файлов:
+graph LR;
+  untracked -- "git add"       --> staged;
+  staged    -- "git commit"    --> tracked/comitted;
+  staged    -- "изменения"     --> modified;
+  tracked   -- "изменения"     --> modified;
+  modified  -- "git add"       --> staged;
+```
 6. подготовить к сохранению все файлы в каталоге
 ~~~bash
 git add --all
