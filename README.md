@@ -82,12 +82,12 @@ git status
 graph LR;
   untracked -- "git add"       --> staged;
   staged    -- "git restore --staged"  --> untracked;
-  modified  -- "git add"       --> staged;
   staged    -- "git commit"    --> tracked;
   staged    -- "изменения"     --> modified;
   tracked   -- "изменения"     --> modified;
   modified  -- "git restore"   --> tracked;
   modified  -- "git restore --staged"   --> staged;
+  modified  -- "git add"       --> staged;
 ```
 6. подготовить к сохранению все файлы в каталоге
 ~~~bash
