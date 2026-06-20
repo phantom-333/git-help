@@ -178,7 +178,7 @@ git branch -d
 ~~~bash
 git push -u origin 
 ~~~
-9. скачать изменения из удалённого репозитория
+9. скачать изменения текущей ветки из удалённого репозитория
 ~~~bash
 git pull 
 ~~~
@@ -257,4 +257,8 @@ git clone
 10. изменить URL удаленного репозитория
 ~~~bash
 git remote set-url origin 
+~~~
+11. удалить текущий origin
+~~~bash
+git remote rm origin
 ~~~
