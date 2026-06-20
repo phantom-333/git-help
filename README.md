@@ -176,7 +176,18 @@ git branch -d
 ~~~
 8. выгрузить локальную ветку на GitHub (git push -u origin [название_ветки])
 ~~~bash
-git push -u origin
+git push -u origin 
+~~~
+9. скачать изменения из удалённого репозитория
+~~~bash
+git pull 
+~~~
+~~~bash
+git checkout main # перешли в main
+git pull # подтянули новые изменения в main
+git checkout my-branch # вернулись в рабочую ветку my-branch
+git merge main # влили main в новую ветку my-branch
+git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий
 ~~~
 ---
 ### Настройка списка файлов, которые не будут отслеживаться и добавляться при коммитах:
